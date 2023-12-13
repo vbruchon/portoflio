@@ -1,7 +1,13 @@
-import { cn } from "./lib/utils";
+import { ThemeProvider } from "./components/theme/ThemeProvider";
+import { ToggleThemeButton } from "./components/theme/ThemeToggle";
 
 function App() {
-  return <div className={cn("bg-primary text-2xl")}>Salut</div>;
+  return (
+    <ThemeProvider>
+      <div className="text-2xl bg-primary">Salut Michel !</div>
+      <ToggleThemeButton />;
+    </ThemeProvider>
+  );
 }
 
 export default App;
