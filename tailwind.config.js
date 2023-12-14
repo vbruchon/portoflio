@@ -65,10 +65,19 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: 0 },
         },
+        "swipe-to-left": {
+          from: {
+            marginLeft: "100%",
+          },
+          to: {
+            marginLeft: "0%",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "swipe-to-left": "swipe-to-left 3s", // Vous n'avez pas besoin de spécifier "animation:" ici
       },
     },
   },
