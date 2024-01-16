@@ -1,8 +1,20 @@
+import { Layout, LayoutContent, LayoutHeader, LayoutTitle } from "../../Layout";
 import { SectionSelector } from "./sectionSelector/SectionSelector";
 
 export const AboutSection = () => {
   return (
-    <section className="py-16" id="about">
+    <Layout id="about">
+      <LayoutHeader>
+        <LayoutTitle>About</LayoutTitle>
+      </LayoutHeader>
+      <LayoutContent>
+        <SectionSelector />
+      </LayoutContent>
+    </Layout>
+  );
+};
+/* 
+<section className="py-16" id="about">
       <div className="w-1/12">
         <h2 className="text-2xl font-bold ">About</h2>
         <div
@@ -11,6 +23,4 @@ export const AboutSection = () => {
         ></div>
       </div>
       <SectionSelector />
-    </section>
-  );
-};
+    </section> */

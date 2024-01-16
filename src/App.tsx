@@ -1,9 +1,9 @@
-import { AboutSection } from "./components/features/aboutSection/AboutSection";
+import { AboutSection } from "./components/features/section/aboutSection/AboutSection";
 import { Header } from "./components/features/header/Header";
-import { Hero } from "./components/features/hero/Hero";
-import { ProjectSection } from "./components/features/project/ProjectSection";
-import { Skills } from "./components/features/skills/Skills";
-import { Testimonial } from "./components/features/testimonial/Testimonial";
+import { Hero } from "./components/features/section/hero/Hero";
+import { ProjectSection } from "./components/features/section/project/ProjectSection";
+import { Skills } from "./components/features/section/skills/Skills";
+import { Testimonial } from "./components/features/section/testimonial/Testimonial";
 import { ThemeProvider } from "./components/theme/ThemeProvider";
 
 function App() {

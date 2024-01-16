@@ -1,4 +1,5 @@
 import { Link } from "@/components/ui/Link";
+import { cn } from "@/lib/utils";
 import { Github, ExternalLink } from "lucide-react";
 
 type ProjectLinksProps = {
@@ -7,7 +8,12 @@ type ProjectLinksProps = {
 };
 export const ProjectLinks = ({ githubUrl, demoUrl }: ProjectLinksProps) => {
   return (
-    <div className="flex items-end justify-between">
+    <div
+      className={cn(
+        "flex items-center justify-between",
+        "lg:absolute lg:bottom-5 lg:w-10/12"
+      )}
+    >
       <Link link={githubUrl}>
         <Github /> Repository
       </Link>

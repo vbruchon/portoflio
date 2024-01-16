@@ -1,3 +1,4 @@
+import { Layout, LayoutHeader, LayoutTitle } from "../../Layout";
 import { Project } from "./Project";
 
 export const ProjectSection = () => {
@@ -29,24 +30,15 @@ export const ProjectSection = () => {
   ];
 
   return (
-    <div className="p-4">
-      <div className="w-1/12">
-        <h2 className="text-2xl font-bold ">Projects</h2>
-        <div
-          className="h-10 mt-2 border-t-2 border-muted-foreground backdrop-blur-sm"
-          style={{ boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.1)" }}
-        ></div>
-      </div>
-      <div className="flex flex-col gap-8 lg:flex-row">
+    <Layout id="projects">
+      <LayoutHeader>
+        <LayoutTitle>Projects</LayoutTitle>
+      </LayoutHeader>
+      <div className="flex items-center flex-col gap-8 lg:flex-row lg:gap-3">
         {projects.map((project) => (
           <Project key={project.name} project={project} />
         ))}
       </div>
-      <div className="flex justify-center mt-8 mb-4">
-        <a className="flex items-center justify-center w-3/12 p-4 rounded-lg lg:2/12 bg-primary">
-          More Project
-        </a>
-      </div>
-    </div>
+    </Layout>
   );
 };

@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { ProjectLinks } from "./ProjectLinks";
+import { cn } from "@/lib/utils";
 
 type ProjectProps = {
   project: {
@@ -13,7 +14,12 @@ type ProjectProps = {
 
 export const Project = ({ project }: ProjectProps) => {
   return (
-    <Card className="w-full transition-all rounded-xl lg:w-1/3 hover:scale-105 bg-card border">
+    <Card
+      className={cn(
+        "w-full h-full transition-all rounded-xl hover:scale-105 bg-card border relative",
+        "lg:w-1/3 lg:h-[455px] xl:h-[440px]"
+      )}
+    >
       <img
         src={project.thumbnailUrl}
         alt={project.name}

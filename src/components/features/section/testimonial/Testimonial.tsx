@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import { TESTIMONIALS as testimonials } from "@/lib/data";
 import "./testimonial.css";
 import { TestimonialItem } from "./TestimonialItem";
+import { Layout, LayoutContent, LayoutHeader, LayoutTitle } from "../../Layout";
 
 export class Testimonial extends Component {
   render() {
@@ -55,13 +56,18 @@ export class Testimonial extends Component {
       ],
     };
     return (
-      <div className="mb-80">
-        <Slider {...settings}>
-          {testimonials.map((testimonial, index) => (
-            <TestimonialItem key={index} testimonial={testimonial} />
-          ))}
-        </Slider>
-      </div>
+      <Layout id="testimonials">
+        <LayoutHeader>
+          <LayoutTitle>Testimonials</LayoutTitle>
+        </LayoutHeader>
+        <LayoutContent>
+          <Slider {...settings}>
+            {testimonials.map((testimonial, index) => (
+              <TestimonialItem key={index} testimonial={testimonial} />
+            ))}
+          </Slider>
+        </LayoutContent>
+      </Layout>
     );
   }
 }
