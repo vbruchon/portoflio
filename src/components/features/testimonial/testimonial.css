@@ -1,0 +1,8 @@
+.slick-prev:before,
+.slick-next:before {
+  color: #ff830f !important; /* Change to your desired red color */
+}
+
+.slick-dots button::before {
+  color: #ff830f !important; /* Change to your desired red color */
+}

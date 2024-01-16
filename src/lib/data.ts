@@ -142,3 +142,45 @@ export const SKILLS = [
     icon: "src/assets/skills/github.png",
   },
 ];
+
+export const TESTIMONIALS = [
+  {
+    name: "Xavier Masclaux",
+    role: "Chef de projet",
+    enterprise: "Le Moulin Digital",
+    content: `Vivian a su comprendre nos besoins et développer des solutions adaptées. 
+      Autonome et réactif, il a résolu les problèmes en cherchant les informations 
+      nécessaires ou en se référant à ses pairs. Sa capacité à s'adapter aux évolutions
+      du projet et à former les utilisateurs a été appréciée. Globalement, il a 
+      dépassé nos attentes et s'est pleinement intégré à notre équipe.`,
+  },
+  {
+    name: "Jean-Philippe Falavel",
+    role: "Représentant Mardinnov'",
+    enterprise: "Le Moulin Digital",
+    content: `Vivian a travaillé à la refonte du site www.mardinnov.com en 2022 sur Wordpress.
+      À partir de la nouvelle charte graphique créée, il a entièrement créé le 
+      nouveau site internet. Très à l'écoute des besoins et force de propositions, 
+      il a su être très réactif et a respecté le calendrier du cahier des charges. 
+      Je le recommande pour son professionnalisme!`,
+  },
+  /* {
+    name: "Stéphanie Escandell",
+    role: "Gestionnaire Cédille formation",
+    enterprise: "Le Moulin Digital",
+    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+    molestie dolor quis sem pellentesque porta. Duis scelerisque placerat arcu, 
+    eu faucibus urna posuere id. Fusce sollicitudin egestas faucibus. Integer 
+    vulputate ex quis vulputate commodo. Phasellus porttitor arcu dui, id posuere 
+    neque viverra a. Phasellus molestie ut tortor at vulputate.`,
+  },
+  {
+    name: "David Escandell",
+    enterprise: "Les jardins de la Drôme",
+    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+    molestie dolor quis sem pellentesque porta. Duis scelerisque placerat arcu, 
+    eu faucibus urna posuere id. Fusce sollicitudin egestas faucibus. Integer 
+    vulputate ex quis vulputate commodo. Phasellus porttitor arcu dui, id posuere 
+    neque viverra a. Phasellus molestie ut tortor at vulputate.`,
+  }, */
+];
