@@ -9,10 +9,10 @@ const HiSection = () => {
           <h1 className="text-4xl font-medium text-primary">Vivian Bruchon</h1>
           <p>
             <span className="text-4xl font-black text-primary">
-              Developper Web passioné
+              Développeur Web passionné
             </span>
-            , je mets mes compétences à vos disposition pour transformer vos
-            idée en projet concret.
+            , je mets mes compétences à votre disposition pour transformer vos
+            idées en projets concrets.
           </p>
         </div>
       </p>

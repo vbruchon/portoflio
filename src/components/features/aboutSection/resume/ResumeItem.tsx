@@ -25,18 +25,16 @@ export const ResumeItem = ({ data }: ResumeItemProps) => {
       </div>
       <div
         className={cn(
-          "z-20 order-1 rounded-lg shadow-xl md:w-5/12 px-4 md:px-6 py-4",
-          {
-            "bg-primary": data.type === "courses",
-            "bg-secondary": data.type === "experience",
-          }
+          "z-20 order-1 rounded-lg shadow-xl md:w-5/12 px-4 md:px-6 py-4 bg-card"
         )}
       >
-        <h3 className="mb-3 font-bold md:text-xl text-white">{data.title}</h3>
-        <p className="text-center md:text-left text-sm font-medium text-white mb-2">
+        <h3 className="mb-3 font-bold md:text-xl text-foreground">
+          {data.title}
+        </h3>
+        <p className="text-center md:text-left text-sm font-medium text-foreground mb-2">
           {data.date}
         </p>
-        <p className="hidden md:block leading-6 text-white">
+        <p className="hidden md:block leading-6 text-foreground">
           {data.description}
         </p>
       </div>

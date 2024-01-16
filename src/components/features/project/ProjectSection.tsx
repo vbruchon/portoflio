@@ -1,4 +1,4 @@
-import Project from "./Project";
+import { Project } from "./Project";
 
 export const ProjectSection = () => {
   const projects = [
@@ -29,7 +29,7 @@ export const ProjectSection = () => {
   ];
 
   return (
-    <div className="h-screen p-4">
+    <div className="p-4">
       <div className="w-1/12">
         <h2 className="text-2xl font-bold ">Projects</h2>
         <div
