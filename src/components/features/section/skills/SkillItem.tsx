@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 export type SkillItemProps = {
   skill: {
     name: string;
@@ -7,13 +9,17 @@ export type SkillItemProps = {
 
 export const SkillItem = ({ skill }: SkillItemProps) => {
   return (
-    <div className="w-1/7 flex items-center flex-col gap-4 bg-card p-4 rounded-lg shadow-md border">
+    <motion.div
+      initial={{ opacity: 0, translateY: -25 }}
+      animate={{ opacity: 1, translateY: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <img
         src={skill.icon}
         alt={skill.name}
         className="w-16 h-16 object-contain"
       />
       <p className="text-foreground text-sm text-center">{skill.name}</p>
-    </div>
+    </motion.div>
   );
 };

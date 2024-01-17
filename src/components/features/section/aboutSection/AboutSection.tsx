@@ -3,9 +3,9 @@ import { SectionSelector } from "./sectionSelector/SectionSelector";
 
 export const AboutSection = () => {
   return (
-    <Layout id="about">
+    <Layout id="about-section">
       <LayoutHeader>
-        <LayoutTitle>About</LayoutTitle>
+        <LayoutTitle elementId="about-title">About</LayoutTitle>
       </LayoutHeader>
       <LayoutContent>
         <SectionSelector />

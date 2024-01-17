@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { Github, Linkedin } from "lucide-react";
 
 const ButtonSection = () => {
@@ -5,8 +6,14 @@ const ButtonSection = () => {
     { name: "Github", link: "", icon: <Github /> },
     { name: "Linkedin", link: "", icon: <Linkedin /> },
   ];
+
   return (
-    <div className="flex justify-center gap-4 md:justify-start">
+    <motion.div
+      className="flex justify-center gap-4 md:justify-start"
+      initial={{ opacity: 0, x: -20 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ delay: 1.2, duration: 0.8 }}
+    >
       {socialNetworks.map((socialNetwork) => (
         <a
           key={socialNetwork.name}
@@ -16,7 +23,7 @@ const ButtonSection = () => {
           {socialNetwork.icon} {socialNetwork.name}
         </a>
       ))}
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { Component } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -55,17 +56,37 @@ export class Testimonial extends Component {
         },
       ],
     };
+
+    const container = {
+      hidden: { opacity: 0 },
+      visible: {
+        opacity: 1,
+        transition: {
+          staggerChildren: 0.5, // Ajout d'un délai entre chaque témoignage
+        },
+      },
+    };
+
+    const item = {
+      hidden: { opacity: 0, y: 20 },
+      visible: { opacity: 1, y: 0 },
+    };
+
     return (
       <Layout id="testimonials">
         <LayoutHeader>
-          <LayoutTitle>Testimonials</LayoutTitle>
+          <LayoutTitle elementId="testimonial-title">Testimonials</LayoutTitle>
         </LayoutHeader>
         <LayoutContent>
-          <Slider {...settings}>
-            {testimonials.map((testimonial, index) => (
-              <TestimonialItem key={index} testimonial={testimonial} />
-            ))}
-          </Slider>
+          <motion.div variants={container} initial="hidden" animate="visible">
+            <Slider {...settings}>
+              {testimonials.map((testimonial, index) => (
+                <motion.div key={index} variants={item}>
+                  <TestimonialItem testimonial={testimonial} />
+                </motion.div>
+              ))}
+            </Slider>
+          </motion.div>
         </LayoutContent>
       </Layout>
     );

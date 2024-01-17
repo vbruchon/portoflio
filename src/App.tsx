@@ -12,9 +12,9 @@ function App() {
       <Header />
       <main className="mx-[5%] md:mx-[10%] xl:mx-[15%]">
         <Hero />
-        <AboutSection />
         <Skills />
         <ProjectSection />
+        <AboutSection />
         <Testimonial />
       </main>
     </ThemeProvider>

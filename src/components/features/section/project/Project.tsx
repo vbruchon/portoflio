@@ -1,6 +1,8 @@
-import { Card, CardContent } from "@/components/ui/card";
+import { motion } from "framer-motion";
+import { CardContent } from "@/components/ui/card";
 import { ProjectLinks } from "./ProjectLinks";
 import { cn } from "@/lib/utils";
+import { useSectionIsVisible } from "@/hooks/useSectionIsVisible";
 
 type ProjectProps = {
   project: {
@@ -10,11 +12,29 @@ type ProjectProps = {
     description: string;
     demoUrl: string;
   };
+  index: number;
+};
+
+const item = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.8,
+      ease: "easeInOut",
+    },
+  },
 };
 
 export const Project = ({ project }: ProjectProps) => {
+  const controls = useSectionIsVisible("project-element");
   return (
-    <Card
+    <motion.div
+      id="project-element"
+      variants={item}
+      animate={controls}
+      initial="hidden"
       className={cn(
         "w-full h-full transition-all rounded-xl hover:scale-105 bg-card border relative",
         "lg:w-1/3 lg:h-[455px] xl:h-[440px]"
@@ -33,6 +53,6 @@ export const Project = ({ project }: ProjectProps) => {
         <p className="mb-4 text-foreground">{project.description}</p>
         <ProjectLinks githubUrl={project.githubUrl} demoUrl={project.demoUrl} />
       </CardContent>
-    </Card>
+    </motion.div>
   );
 };
