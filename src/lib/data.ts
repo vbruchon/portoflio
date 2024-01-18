@@ -145,16 +145,18 @@ export const SKILLS = [
 
 export const TESTIMONIALS = [
   {
+    img: "https://media.licdn.com/dms/image/D4D03AQGvNhSA6TmaGA/profile-displayphoto-shrink_200_200/0/1697121222742?e=1710979200&v=beta&t=1WORM14SdOT34n92U5ekHsY6Zz3QGxk-haKlDZGDNPc",
     name: "Xavier Masclaux",
     role: "Chef de projet",
     enterprise: "Le Moulin Digital",
     content: `Vivian a su comprendre nos besoins et développer des solutions adaptées. 
-      Autonome et réactif, il a résolu les problèmes en cherchant les informations 
-      nécessaires ou en se référant à ses pairs. Sa capacité à s'adapter aux évolutions
-      du projet et à former les utilisateurs a été appréciée. Globalement, il a 
-      dépassé nos attentes et s'est pleinement intégré à notre équipe.`,
+    Autonome et réactif, il a résolu les problèmes en cherchant les informations 
+    nécessaires ou en se référant à ses pairs. Sa capacité à s'adapter aux évolutions
+    du projet et à former les utilisateurs a été appréciée. Globalement, il a 
+    dépassé nos attentes et s'est pleinement intégré à notre équipe.`,
   },
   {
+    img: "https://media.licdn.com/dms/image/C4E03AQF_kDjXj0ClQQ/profile-displayphoto-shrink_200_200/0/1641303210793?e=1710979200&v=beta&t=1DWm-jS4MLFf1EmCEMranoKkP3N5DOez08A0Hyx_rPY",
     name: "Jean-Philippe Falavel",
     role: "Représentant Mardinnov'",
     enterprise: "Le Moulin Digital",
@@ -164,23 +166,27 @@ export const TESTIMONIALS = [
       il a su être très réactif et a respecté le calendrier du cahier des charges. 
       Je le recommande pour son professionnalisme!`,
   },
-  /* {
+  {
+    img: "https://media.licdn.com/dms/image/C4E03AQHIYPIUy4wzmA/profile-displayphoto-shrink_200_200/0/1657047246625?e=1710979200&v=beta&t=gbHtnh7ywX9YZXUP9s3hOaq7wU7pFojqPjlD7954dwQ",
     name: "Stéphanie Escandell",
     role: "Gestionnaire Cédille formation",
     enterprise: "Le Moulin Digital",
-    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
-    molestie dolor quis sem pellentesque porta. Duis scelerisque placerat arcu, 
-    eu faucibus urna posuere id. Fusce sollicitudin egestas faucibus. Integer 
-    vulputate ex quis vulputate commodo. Phasellus porttitor arcu dui, id posuere 
-    neque viverra a. Phasellus molestie ut tortor at vulputate.`,
+    content: `Suite à la création du site web de Cédille formation, je suis 
+    satisfé de notre collaboration avec Vivian. Son écoute attentive et sa pédagogie 
+    ont grandement facilité la compréhension de chaque 
+    étape du processus, surtout pour une novice comme moi. Vivian a su répondre 
+    efficacement à nos attentes et adapter le site à nos exigences. Son professionnalisme 
+    et son expertise ont contribué à la mise en place de ce projet. Je recommande 
+    vivement les services de Vivian.`,
   },
   {
+    img: "https://www.les-jardins-de-la-drome.fr/wp-content/uploads/2023/08/les-jardins-de-la-drome_logo.png",
     name: "David Escandell",
     enterprise: "Les jardins de la Drôme",
-    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
-    molestie dolor quis sem pellentesque porta. Duis scelerisque placerat arcu, 
-    eu faucibus urna posuere id. Fusce sollicitudin egestas faucibus. Integer 
-    vulputate ex quis vulputate commodo. Phasellus porttitor arcu dui, id posuere 
-    neque viverra a. Phasellus molestie ut tortor at vulputate.`,
-  }, */
+    content: `Vivian a su saisir le projet, comprendre nos attentes et exigences. 
+    Nous sommes très satisfaits du travail accompli, du référencement du site. 
+    Il a contribué à la réussite de ce projet. Je recommande vivement ses services 
+    pour toute entreprise cherchant à développer une présence en ligne de qualité. 
+    Un grand merci à Vivian.`,
+  },
 ];

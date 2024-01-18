@@ -2,6 +2,7 @@ import { TestimonialInfo } from "./TestimonialInfo";
 
 export type TestimonialItemProps = {
   testimonial: {
+    img: string;
     name: string;
     role?: string;
     enterprise: string;

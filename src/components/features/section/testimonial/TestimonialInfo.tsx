@@ -1,5 +1,6 @@
 export type TestimonialInfoProps = {
   testimonial: {
+    img: string;
     name: string;
     role?: string;
     enterprise: string;
@@ -12,8 +13,8 @@ export const TestimonialInfo = ({ testimonial }: TestimonialInfoProps) => {
     <div className="flex items-center justify-center mb-4 md:items-start md:justify-start md:mb-0 md:gap-4">
       <img
         alt="Man"
-        src="src/assets/me.png"
-        className="h-14 w-14 rounded-full object-cover bg-white border-2 border-accent lg:mr-4"
+        src={testimonial.img}
+        className="h-16 w-16 rounded-full object-cover lg:mr-4"
       />
 
       <div className="ml-4">
