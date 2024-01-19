@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 type SectionButtonProps = {
   section: string;
   activeSection: string;
@@ -9,6 +11,8 @@ export const SectionButton = ({
   activeSection,
   onClick,
 }: SectionButtonProps) => {
+  const { t } = useTranslation("global");
+
   const baseStyle =
     "text-lg font-semibold px-4 focus:outline-none transition-all";
   const activeStyle = "bg-primary p-2 rounded-lg";
@@ -19,9 +23,14 @@ export const SectionButton = ({
       ? `${baseStyle} ${activeStyle}`
       : `${baseStyle} p-2 ${hoverStyle}`;
 
+  const buttonText =
+    section === "about"
+      ? t("aboutSection.aboutMeSection.button")
+      : t("aboutSection.experienceSection.button");
+
   return (
     <button className={buttonStyle} onClick={() => onClick(section)}>
-      {section === "about" ? "About Me" : "Resume"}
+      {buttonText}
     </button>
   );
 };

@@ -3,18 +3,21 @@ import { AlignRight } from "lucide-react";
 import { useState } from "react";
 import { NavItem } from "./NavItem";
 import { MobileMenu } from "./MobileMenu";
+import { useTranslation } from "react-i18next";
 
 type NavProps = {
   children: React.ReactNode;
 };
 
 export const Nav = ({ children }: NavProps) => {
+  const { t } = useTranslation("global");
+
   const links = [
-    { name: "Project", href: "#portfolio" },
-    { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
-    { name: "Testimonial", href: "#testimonial" },
-    { name: "Contact", href: "#contact" },
+    { name: t("projectSection.title"), href: "#projects" },
+    { name: t("skillSection.title"), href: "#skills" },
+    { name: t("aboutSection.title"), href: "#about" },
+    { name: t("testimonialSection.title"), href: "#testimonials" },
+    { name: t("contactSection.title"), href: "#contact" },
   ];
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

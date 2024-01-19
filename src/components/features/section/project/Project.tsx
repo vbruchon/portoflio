@@ -3,15 +3,10 @@ import { CardContent } from "@/components/ui/card";
 import { ProjectLinks } from "./ProjectLinks";
 import { cn } from "@/lib/utils";
 import { useSectionIsVisible } from "@/hooks/useSectionIsVisible";
+import { ProjectType } from "./ProjectSection";
 
 type ProjectProps = {
-  project: {
-    name: string;
-    thumbnailUrl: string;
-    githubUrl: string;
-    description: string;
-    demoUrl: string;
-  };
+  project: ProjectType;
   index: number;
 };
 
@@ -29,6 +24,7 @@ const item = {
 
 export const Project = ({ project }: ProjectProps) => {
   const controls = useSectionIsVisible("project-element");
+
   return (
     <motion.div
       id="project-element"
@@ -42,13 +38,13 @@ export const Project = ({ project }: ProjectProps) => {
     >
       <img
         src={project.thumbnailUrl}
-        alt={project.name}
+        alt={project.title}
         className="object-cover w-full h-40 mb-4 rounded-xl"
         style={{ borderBottomLeftRadius: 0, borderBottomRightRadius: 0 }}
       />
       <CardContent className="flex flex-col flex-grow mt-auto">
         <h3 className="mb-2 text-lg font-semibold text-foreground">
-          {project.name}
+          {project.title}
         </h3>
         <p className="mb-4 text-foreground">{project.description}</p>
         <ProjectLinks githubUrl={project.githubUrl} demoUrl={project.demoUrl} />

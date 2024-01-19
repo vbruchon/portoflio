@@ -1,11 +1,16 @@
+import { useTranslation } from "react-i18next";
 import { Layout, LayoutContent, LayoutHeader, LayoutTitle } from "../../Layout";
 import { SectionSelector } from "./sectionSelector/SectionSelector";
 
 export const AboutSection = () => {
+  const { t } = useTranslation("global");
+
   return (
     <Layout id="about-section">
       <LayoutHeader>
-        <LayoutTitle elementId="about-title">About</LayoutTitle>
+        <LayoutTitle elementId="about-title">
+          {t("aboutSection.title")}
+        </LayoutTitle>
       </LayoutHeader>
       <LayoutContent>
         <SectionSelector />

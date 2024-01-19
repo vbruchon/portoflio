@@ -1,5 +1,6 @@
 import { useSectionIsVisible } from "@/hooks/useSectionIsVisible";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const item = {
   hidden: { y: -25, opacity: 0 },
@@ -11,6 +12,7 @@ const item = {
 
 export const About = ({ avatarSrc = "/src/assets/me.png" }) => {
   const controls = useSectionIsVisible("about");
+  const { t } = useTranslation("global");
 
   return (
     <div id="about" className="container mx-auto">
@@ -36,8 +38,7 @@ export const About = ({ avatarSrc = "/src/assets/me.png" }) => {
             animate={controls}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            Hello, I'm Vivian Bruchon, a web developer based in Valence in Drôme
-            (France).
+            {t("aboutSection.aboutMeSection.text1")}
           </motion.p>
           <motion.p
             className="text-xl text-foreground mb-4"
@@ -46,10 +47,7 @@ export const About = ({ avatarSrc = "/src/assets/me.png" }) => {
             animate={controls}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            I'm specialize in building modern and responsive web applications
-            using the latest technologies. With a keen eye for design and a
-            passion for coding, I strive to create beautiful and user-friendly
-            digital experiences.
+            {t("aboutSection.aboutMeSection.text2")}
           </motion.p>
 
           <motion.p
@@ -59,7 +57,7 @@ export const About = ({ avatarSrc = "/src/assets/me.png" }) => {
             animate={controls}
             transition={{ duration: 0.5, delay: 0.9 }}
           >
-            Let's connect and create something amazing together!
+            {t("aboutSection.aboutMeSection.text3")}
           </motion.p>
         </div>
       </div>

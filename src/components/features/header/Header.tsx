@@ -1,5 +1,6 @@
 import { ToggleThemeButton } from "@/components/theme/ThemeToggle";
 import { Nav } from "./Nav";
+import { LanguageSwitcher } from "@/components/locales/LanguageSwitcher";
 
 export const Header = () => {
   return (
@@ -7,6 +8,7 @@ export const Header = () => {
       <img src="/logo_white.png" className="w-1/12 h-auto md:w-14" />
       <Nav>
         <ToggleThemeButton />
+        <LanguageSwitcher />
       </Nav>
     </header>
   );
