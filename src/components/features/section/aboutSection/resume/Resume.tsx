@@ -24,8 +24,8 @@ export type ExperienceType = {
 }
 
 const Resume = () => {
-    const controls = useSectionIsVisible('resume')
     const { t } = useTranslation('global')
+    const controls = useSectionIsVisible('resume-container')
 
     const experiences: ExperienceType[] = t(
         'aboutSection.experienceSection.experiences',
@@ -37,7 +37,7 @@ const Resume = () => {
     return (
         <motion.div
             className="mx-auto mt-8 h-full w-full"
-            id="resume"
+            id="resume-container"
             initial={'hidden'}
             variants={container}
             animate={controls}

@@ -1,3 +1,4 @@
+import { useSectionIsVisible } from '@/hooks/useSectionIsVisible'
 import { ResumeItemProps } from '@/lib/data'
 import { cn } from '@/lib/utils'
 import { motion } from 'framer-motion'
@@ -5,6 +6,26 @@ import { motion } from 'framer-motion'
 export const ResumeItem = ({ data }: ResumeItemProps) => {
     const isCourse = data.type === 'courses'
     const isExperience = data.type === 'experience'
+    const controls = useSectionIsVisible('resume-container')
+
+    const CardVariants = {
+        hidden: { x: isCourse ? -1000 : 1000 },
+        visible: {
+            x: 0,
+            transition: {
+                duration: 1,
+            },
+        },
+    }
+    const containerVariant = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                duration: 1,
+            },
+        },
+    }
 
     return (
         <motion.div
@@ -15,9 +36,9 @@ export const ResumeItem = ({ data }: ResumeItemProps) => {
                     'left-timeline md:flex-row-reverse': isCourse,
                 }
             )}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
+            initial="hidden"
+            animate={controls}
+            variants={containerVariant}
         >
             <div className="order-1 w-full md:w-5/12"></div>
             <div
@@ -35,9 +56,9 @@ export const ResumeItem = ({ data }: ResumeItemProps) => {
                 className={cn(
                     'z-20 order-1 rounded-lg bg-card px-4 py-4 shadow-xl md:w-5/12 md:px-6'
                 )}
-                initial={{ x: isCourse ? -1000 : 1000 }}
-                animate={{ x: 0 }}
-                transition={{ duration: 1 }}
+                initial="hidden"
+                animate={controls}
+                variants={CardVariants}
             >
                 <h3 className="mb-3 text-center text-xl font-bold text-accent">
                     {data.title}

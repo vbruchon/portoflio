@@ -7,6 +7,7 @@ import Slider from 'react-slick'
 import { useTranslation } from 'react-i18next'
 import { Layout, LayoutContent, LayoutHeader, LayoutTitle } from '../../Layout'
 import { TestimonialItem } from './TestimonialItem'
+import { useSectionIsVisible } from '@/hooks/useSectionIsVisible'
 
 type TestimonialData = {
     img: string
@@ -18,13 +19,14 @@ type TestimonialData = {
 
 export const Testimonial: FC = () => {
     const { t } = useTranslation('global')
+    const controls = useSectionIsVisible('testimonials-container')
 
     const container = {
         hidden: { opacity: 0 },
         visible: {
             opacity: 1,
             transition: {
-                staggerChildren: 0.5,
+                staggerChildren: 0.2,
             },
         },
     }
@@ -86,7 +88,8 @@ export const Testimonial: FC = () => {
                 <motion.div
                     variants={container}
                     initial="hidden"
-                    animate="visible"
+                    animate={controls}
+                    id="testimonials-container"
                 >
                     <Slider {...settings}>
                         {testimonials.map((testimonial, index) => (
