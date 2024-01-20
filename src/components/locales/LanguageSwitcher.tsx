@@ -40,29 +40,31 @@ export const LanguageSwitcher = () => {
   </button> 
 }
  */
-import { useTranslation } from "react-i18next";
-import CountryFlag from "react-country-flag";
+import { useTranslation } from 'react-i18next'
+import CountryFlag from 'react-country-flag'
 
 export const LanguageSwitcher = () => {
-  const { i18n } = useTranslation();
+    const { i18n } = useTranslation()
 
-  const toggleLanguage = (selectedLanguage: string) => {
-    i18n.changeLanguage(selectedLanguage);
-  };
+    const toggleLanguage = (selectedLanguage: string) => {
+        i18n.changeLanguage(selectedLanguage)
+    }
 
-  return (
-    <div>
-      <CountryFlag
-        countryCode={i18n.language === "en" ? "GB" : "FR"}
-        svg
-        onClick={() => toggleLanguage(i18n.language === "en" ? "fr" : "en")}
-        style={{
-          width: "25px",
-          height: "25px",
-          cursor: "pointer",
-          borderRadius: "100%",
-        }}
-      />
-    </div>
-  );
-};
+    return (
+        <div>
+            <CountryFlag
+                countryCode={i18n.language === 'en' ? 'GB' : 'FR'}
+                svg
+                onClick={() =>
+                    toggleLanguage(i18n.language === 'en' ? 'fr' : 'en')
+                }
+                style={{
+                    width: '25px',
+                    height: '25px',
+                    cursor: 'pointer',
+                    borderRadius: '100%',
+                }}
+            />
+        </div>
+    )
+}

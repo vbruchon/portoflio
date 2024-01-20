@@ -1,22 +1,30 @@
-import { TestimonialInfo } from "./TestimonialInfo";
+import { cn } from '@/lib/utils'
+import { TestimonialInfo } from './TestimonialInfo'
 
 export type TestimonialItemProps = {
-  testimonial: {
-    img: string;
-    name: string;
-    role?: string;
-    enterprise: string;
-    content: string;
-  };
-};
+    testimonial: {
+        img: string
+        name: string
+        role?: string
+        enterprise: string
+        content: string
+    }
+}
 
 export const TestimonialItem = ({ testimonial }: TestimonialItemProps) => {
-  return (
-    <blockquote className="lg:!w-[97%] p-6 bg-card rounded-lg my-4 mx-auto shadow-md">
-      <TestimonialInfo testimonial={testimonial} />
-      <p className="mt-4 lg:text-center text-lg text-muted lg:text-xl">
-        {testimonial.content}
-      </p>
-    </blockquote>
-  );
-};
+    return (
+        <blockquote
+            className={cn(
+                'mx-auto my-4 flex h-[600px] flex-col items-center rounded-lg bg-card p-6 shadow-md',
+                'md:h-[380px]',
+                'lg:h-[565px] lg:!w-[97%]',
+                'xl:h-[515px] 2xl:h-[420px]'
+            )}
+        >
+            <TestimonialInfo testimonial={testimonial} />
+            <p className="my-auto text-center text-lg text-muted lg:text-xl">
+                {testimonial.content}
+            </p>
+        </blockquote>
+    )
+}
