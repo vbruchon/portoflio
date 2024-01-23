@@ -2,7 +2,11 @@ import { motion } from 'framer-motion'
 import HiSection from './HiSection'
 import Me from './Me'
 
-export const Hero = () => {
+type HeroPropsType = {
+    key: string
+}
+
+export const Hero = ({ key }: HeroPropsType) => {
     const container = {
         hidden: { opacity: 0, y: 50 },
         visible: {
@@ -21,6 +25,7 @@ export const Hero = () => {
             initial="hidden"
             animate="visible"
             variants={container}
+            key={key}
         >
             <motion.div
                 className="lg:flex lg:flex-row-reverse"

@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { AboutSection } from './components/features/section/aboutSection/AboutSection'
 import { Header } from './components/features/header/Header'
 import { Hero } from './components/features/section/hero/Hero'
@@ -20,13 +21,25 @@ i18next.init({
     },
 })
 
+export type LanguageType = string
+
 function App() {
+    const [currentLanguage, setCurrentLanguage] = useState('en')
+
+    const changeLanguage = (newLanguage: LanguageType) => {
+        i18next.changeLanguage(newLanguage)
+        setCurrentLanguage(newLanguage)
+    }
+
     return (
         <ThemeProvider>
             <I18nextProvider i18n={i18next}>
-                <Header />
+                <Header
+                    changeLanguage={changeLanguage}
+                    currentLanguage={currentLanguage}
+                />
                 <main className="mx-[5%] md:mx-[10%] xl:mx-[15%]">
-                    <Hero />
+                    <Hero key={currentLanguage} />
                     <Skills />
                     <ProjectSection />
                     <AboutSection />
