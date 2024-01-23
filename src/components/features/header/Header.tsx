@@ -15,7 +15,10 @@ export const Header = ({
     return (
         <header className="mt-2 flex items-center justify-around md:mt-4 md:justify-evenly">
             <img src="/logo_white.png" className="h-auto w-1/12 md:w-14" />
-            <Nav>
+            <Nav
+                changeLanguage={changeLanguage}
+                currentLanguage={currentLanguage}
+            >
                 <ToggleThemeButton />
                 <LanguageSwitcher
                     changeLanguage={changeLanguage}
