@@ -123,6 +123,7 @@
         ]
     },
     "contactSection": {
-        "title": "Contact"
+        "title": "Contact",
+        "content": "Feel free to contact me by email, Linkedin or check out my activity on github"
     }
 }

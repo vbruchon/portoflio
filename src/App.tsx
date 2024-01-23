@@ -12,6 +12,7 @@ import i18next from 'i18next'
 import { I18nextProvider } from 'react-i18next'
 import global_en from './components/locales/en/global.json'
 import global_fr from './components/locales/fr/global.json'
+import { Contact } from './components/features/section/contact/Contact'
 
 i18next.init({
     interpolation: { escapeValue: false },
@@ -51,6 +52,7 @@ function App() {
                     <ProjectSection />
                     <AboutSection />
                     <Testimonial />
+                    <Contact />
                 </main>
             </I18nextProvider>
         </ThemeProvider>

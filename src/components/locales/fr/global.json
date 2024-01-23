@@ -123,7 +123,9 @@
             }
         ]
     },
+
     "contactSection": {
-        "title": "Contact"
+        "title": "Contact",
+        "content": "N'hésitez pas à me contacter par email, par Linkedin ou regarder mon activité sur github"
     }
 }
