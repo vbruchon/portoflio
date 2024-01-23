@@ -1,130 +1,129 @@
 {
-  "heroSection": {
-    "part1": "Bonjour à tous ! Je suis -",
-    "name": "Vivian Bruchon",
-    "buisiness": "DEVELOPPEUR WEB",
-    "part2": "Passionné de code et d'expériences web, j'aime transformer une idée en un projet concret.",
-    "incitation": "Explorez mes créations web en parcourant le reste de mon portfolio."
-  },
-  "skillSection": {
-    "title": "Compétences",
-    "category1": "Développement Web",
-    "category2": "Autres"
-  },
-  "projectSection": {
-    "title": "Projets",
-    "list": [
-      {
-        "title": "The North Face Clone",
-        "description": "Un projet de clonage de la marque de vêtements The North Face, mettant en valeur les compétences de conception et de développement pour recréer une expérience visuelle immersive.",
-        "githubUrl": "https://github.com/vbruchon",
-        "demoUrl": "https://vivianb.fr/",
-        "thumbnailUrl": "src/assets/project1.png"
-      },
-      {
-        "title": "La Marine Perfume",
-        "description": "Un site dédié au parfum La Marine, mettant en lumière son histoire, ses notes exquises et offrant une expérience élégante pour les passionnés de parfumerie.",
-        "githubUrl": "https://github.com/vbruchon",
-        "demoUrl": "https://melvynx.com/#contact",
-        "thumbnailUrl": "src/assets/project2.png"
-      },
-      {
-        "title": "Sales Dashboard",
-        "description": "Un tableau de bord d'entreprise sophistiqué conçu pour permettre un contrôle efficace des ventes, offrant des analyses approfondies et des fonctionnalités intuitives pour une gestion optimale.",
-        "githubUrl": "https://github.com/vbruchon",
-        "demoUrl": "https://vivianb.fr/",
-        "thumbnailUrl": "src/assets/project3.png"
-      }
-    ]
-  },
-  "aboutSection": {
-    "title": "À propos",
-    "aboutMeSection": {
-      "button": "À propos de moi",
-      "text1": "Salut, je suis Vivian Bruchon, un développeur web basé à Valence dans la Drôme (France).",
-      "text2": "Je me spécialise dans la création d'applications web modernes et réactives en utilisant les dernières technologies. Avec un œil attentif pour le design et une passion pour le codage, je m'efforce de créer des expériences numériques belles et conviviales.",
-      "text3": "Connectons-nous et créons quelque chose d'incroyable ensemble !"
+    "heroSection": {
+        "part1": "Bonjour à tous ! Je suis -",
+        "name": "Vivian Bruchon",
+        "buisiness": "DEVELOPPEUR WEB",
+        "part2": "Passionné de code et d'expériences web, j'aime transformer une idée en un projet concret.",
+        "incitation": "Explorez mes créations web en parcourant le reste de mon portfolio."
     },
-    "experienceSection": {
-      "button": "Expériences",
-      "experiences": [
-        {
-          "title": "Formation NextReact",
-          "date": "Décembre 2023",
-          "link": "https://codelynx.dev/beginreact",
-          "type": "courses",
-          "img": "src/assets/logo_NextReact.png",
-          "description": "Suite à BeginReact, exploration de Next.js et de ses concepts et écosystème."
+    "skillSection": {
+        "title": "Compétences",
+        "category1": "Développement Web",
+        "category2": "Autres"
+    },
+    "projectSection": {
+        "title": "Derniers Projets",
+        "list": [
+            {
+                "title": "Les jardins de la Drôme",
+                "description": "Création du nouveau site les jardins de la Drôme afin de répondre à leur nouveaux besoins. ",
+                "demoUrl": "https://les-jardins-de-la-drome.fr/",
+                "thumbnailUrl": "src/assets/projects/les_jardins_de_la_drome.png"
+            },
+            {
+                "title": "Application Web pour la gestion de programmation d'événements",
+                "description": "Création d'une application web qui facilite la saisie des événements. Gestion des droits utilisateurs, affichage des événements en liste et conversion ICS pour implémentation dans une vue calendrier.",
+                "githubUrl": "https://github.com/vbruchon",
+                "demoUrl": "https://archimede.vivianb.fr/login",
+                "thumbnailUrl": "src/assets/projects/archimede.png"
+            },
+            {
+                "title": "Cédille Formation : Organisme de Formation Mutualisé",
+                "description": "Transformation d'une landing page en un site complet pour Cédille Formation, intégrant à la fois la vitrine et le catalogue de formations. Mise en place d'améliorations côté serveur et personnalisation du tableau de bord en back-end pour répondre aux attentes du clients.",
+                "githubUrl": "https://github.com/vbruchon/Cedille",
+                "demoUrl": "https://cedille-formation.fr/",
+                "thumbnailUrl": "src/assets/projects/cedille_formation.png"
+            }
+        ]
+    },
+    "aboutSection": {
+        "title": "À propos",
+        "aboutMeSection": {
+            "button": "À propos de moi",
+            "text1": "Salut, je suis Vivian Bruchon, un développeur web basé à Valence dans la Drôme (France).",
+            "text2": "Je me spécialise dans la création d'applications web modernes et réactives en utilisant les dernières technologies. Avec un œil attentif pour le design et une passion pour le codage, je m'efforce de créer des expériences numériques belles et conviviales.",
+            "text3": "Connectons-nous et créons quelque chose d'incroyable ensemble !"
         },
-        {
-          "title": "Formation BeginReact",
-          "date": "Novembre 2023",
-          "link": "https://codelynx.dev/beginreact",
-          "type": "courses",
-          "img": "src/assets/logo_BeginReact.png",
-          "description": "Formation sur le framework React, ses concepts de base et son écosystème."
-        },
-        {
-          "title": "Développeur Web",
-          "date": "Juin 2023 - Juillet 2023",
-          "link": "https://lemoulindigital.fr/",
-          "description": "Pour conclure les projets de stage, poursuite de l'aventure avec Le Moulin Digital.",
-          "type": "experience",
-          "img": "src/assets/logo_Le-moulin-digital.png"
-        },
-        {
-          "title": "Stage de Développeur Web",
-          "date": "Juillet 2022 - Juin 2023",
-          "link": "https://lemoulindigital.fr/",
-          "description": "Après avoir terminé la première phase de ma formation au campus, j'ai eu l'opportunité de faire mon stage chez Le Moulin Digital. Cette expérience d'un an m'a permis de mener à bien plusieurs projets importants, Mardinnov', Cédille Formation, Archimède. En travaillant de manière autonome sur ces projets avec le soutien d'un mentor, j'ai pris en charge l'ensemble du processus, du prototypage à la livraison finale, tout en maintenant un suivi régulier avec les clients.",
-          "type": "experience",
-          "img": "src/assets/logo_Le-moulin-digital.png"
-        },
-        {
-          "title": "Formation Développeur Web & Applis",
-          "date": "Décembre 2021 - Juin 2023",
-          "link": "https://le-campus-numerique.fr/",
-          "description": "Mon parcours de 18 mois au Campus Numérique a été une immersion complète dans le monde du Développeur Web & Applis. Les 6 premiers mois ont forgé les fondations de mes compétences techniques et de collaboration, tandis que la phase de stage de 12 mois a offert une opportunité d'approfondir ces compétences tout en les appliquant dans des contextes professionnels concrets.",
-          "type": "courses",
-          "img": "src/assets/logo_Campus-numerique.png"
+        "experienceSection": {
+            "button": "Expériences",
+            "experiences": [
+                {
+                    "title": "Formation NextReact",
+                    "date": "Décembre 2023",
+                    "link": "https://codelynx.dev/beginreact",
+                    "type": "courses",
+                    "img": "src/assets/logo_NextReact.png",
+                    "description": "Suite à BeginReact, exploration de Next.js et de ses concepts et écosystème."
+                },
+                {
+                    "title": "Formation BeginReact",
+                    "date": "Novembre 2023",
+                    "link": "https://codelynx.dev/beginreact",
+                    "type": "courses",
+                    "img": "src/assets/logo_BeginReact.png",
+                    "description": "Formation sur le framework React, ses concepts de base et son écosystème."
+                },
+                {
+                    "title": "Développeur Web",
+                    "date": "Juin 2023 - Juillet 2023",
+                    "link": "https://lemoulindigital.fr/",
+                    "description": "Pour conclure les projets de stage, poursuite de l'aventure avec Le Moulin Digital.",
+                    "type": "experience",
+                    "img": "src/assets/logo_Le-moulin-digital.png"
+                },
+                {
+                    "title": "Stage de Développeur Web",
+                    "date": "Juillet 2022 - Juin 2023",
+                    "link": "https://lemoulindigital.fr/",
+                    "description": "Après avoir terminé la première phase de ma formation au campus, j'ai eu l'opportunité de faire mon stage chez Le Moulin Digital. Cette expérience d'un an m'a permis de mener à bien plusieurs projets importants, Mardinnov', Cédille Formation, Archimède. En travaillant de manière autonome sur ces projets avec le soutien d'un mentor, j'ai pris en charge l'ensemble du processus, du prototypage à la livraison finale, tout en maintenant un suivi régulier avec les clients.",
+                    "type": "experience",
+                    "img": "src/assets/logo_Le-moulin-digital.png"
+                },
+                {
+                    "title": "Formation Développeur Web & Applis",
+                    "date": "Décembre 2021 - Juin 2023",
+                    "link": "https://le-campus-numerique.fr/",
+                    "description": "Mon parcours de 18 mois au Campus Numérique a été une immersion complète dans le monde du Développeur Web & Applis. Les 6 premiers mois ont forgé les fondations de mes compétences techniques et de collaboration, tandis que la phase de stage de 12 mois a offert une opportunité d'approfondir ces compétences tout en les appliquant dans des contextes professionnels concrets.",
+                    "type": "courses",
+                    "img": "src/assets/logo_Campus-numerique.png"
+                }
+            ]
         }
-      ]
+    },
+    "testimonialSection": {
+        "title": "Témoignages",
+        "testimonials": [
+            {
+                "img": "https://media.licdn.com/dms/image/D4D03AQGvNhSA6TmaGA/profile-displayphoto-shrink_200_200/0/1697121222742?e=1710979200&v=beta&t=1WORM14SdOT34n92U5ekHsY6Zz3QGxk-haKlDZGDNPc",
+                "name": "Xavier Masclaux",
+                "role": "Chef de projet",
+                "enterprise": "Le Moulin Digital",
+                "content": "Vivian a su comprendre nos besoins et développer des solutions adaptées. Autonome et réactif, il a résolu les problèmes en cherchant les informations nécessaires ou en se référant à ses pairs. Sa capacité à s'adapter aux évolutions du projet et à former les utilisateurs a été appréciée. Globalement, il a dépassé nos attentes et s'est pleinement intégré à notre équipe."
+            },
+            {
+                "img": "https://media.licdn.com/dms/image/C4E03AQF_kDjXj0ClQQ/profile-displayphoto-shrink_200_200/0/1641303210793?e=1710979200&v=beta&t=1DWm-jS4MLFf1EmCEMranoKkP3N5DOez08A0Hyx_rPY",
+                "name": "Jean-Philippe Falavel",
+                "role": "Représentant Mardinnov'",
+                "enterprise": "Le Moulin Digital",
+                "content": "Vivian a travaillé à la refonte du site www.mardinnov.com en 2022 sur Wordpress. À partir de la nouvelle charte graphique créée, il a entièrement créé le nouveau site internet. Très à l'écoute des besoins et force de propositions, il a su être très réactif et a respecté le calendrier du cahier des charges. Je le recommande pour son professionnalisme!"
+            },
+            {
+                "img": "https://media.licdn.com/dms/image/C4E03AQHIYPIUy4wzmA/profile-displayphoto-shrink_200_200/0/1657047246625?e=1710979200&v=beta&t=gbHtnh7ywX9YZXUP9s3hOaq7wU7pFojqPjlD7954dwQ",
+                "name": "Stéphanie Escandell",
+                "role": "Gestionnaire Cédille formation",
+                "enterprise": "Le Moulin Digital",
+                "content": "Suite à la création du site web de Cédille formation, je suis satisfait de notre collaboration avec Vivian. Son écoute attentive et sa pédagogie ont grandement facilité la compréhension de chaque étape du processus, surtout pour une novice comme moi. Vivian a su répondre efficacement à nos attentes et adapter le site à nos exigences. Son professionnalisme et son expertise ont contribué à la mise en place de ce projet. Je recommande vivement les services de Vivian."
+            },
+            {
+                "img": "https://www.les-jardins-de-la-drome.fr/wp-content/uploads/2023/08/les-jardins-de-la-drome_logo.png",
+                "name": "David Escandell",
+                "role": null,
+                "enterprise": "Les jardins de la Drôme",
+                "content": "Vivian a su saisir le projet, comprendre nos attentes et exigences. Nous sommes très satisfaits du travail accompli, du référencement du site. Il a contribué à la réussite de ce projet. Je recommande vivement ses services pour toute entreprise cherchant à développer une présence en ligne de qualité. Un grand merci à Vivian."
+            }
+        ]
+    },
+    "contactSection": {
+        "title": "Contact"
     }
-  },
-  "testimonialSection": {
-    "title": "Témoignages",
-    "testimonials": [
-      {
-        "img": "https://media.licdn.com/dms/image/D4D03AQGvNhSA6TmaGA/profile-displayphoto-shrink_200_200/0/1697121222742?e=1710979200&v=beta&t=1WORM14SdOT34n92U5ekHsY6Zz3QGxk-haKlDZGDNPc",
-        "name": "Xavier Masclaux",
-        "role": "Chef de projet",
-        "enterprise": "Le Moulin Digital",
-        "content": "Vivian a su comprendre nos besoins et développer des solutions adaptées. Autonome et réactif, il a résolu les problèmes en cherchant les informations nécessaires ou en se référant à ses pairs. Sa capacité à s'adapter aux évolutions du projet et à former les utilisateurs a été appréciée. Globalement, il a dépassé nos attentes et s'est pleinement intégré à notre équipe."
-      },
-      {
-        "img": "https://media.licdn.com/dms/image/C4E03AQF_kDjXj0ClQQ/profile-displayphoto-shrink_200_200/0/1641303210793?e=1710979200&v=beta&t=1DWm-jS4MLFf1EmCEMranoKkP3N5DOez08A0Hyx_rPY",
-        "name": "Jean-Philippe Falavel",
-        "role": "Représentant Mardinnov'",
-        "enterprise": "Le Moulin Digital",
-        "content": "Vivian a travaillé à la refonte du site www.mardinnov.com en 2022 sur Wordpress. À partir de la nouvelle charte graphique créée, il a entièrement créé le nouveau site internet. Très à l'écoute des besoins et force de propositions, il a su être très réactif et a respecté le calendrier du cahier des charges. Je le recommande pour son professionnalisme!"
-      },
-      {
-        "img": "https://media.licdn.com/dms/image/C4E03AQHIYPIUy4wzmA/profile-displayphoto-shrink_200_200/0/1657047246625?e=1710979200&v=beta&t=gbHtnh7ywX9YZXUP9s3hOaq7wU7pFojqPjlD7954dwQ",
-        "name": "Stéphanie Escandell",
-        "role": "Gestionnaire Cédille formation",
-        "enterprise": "Le Moulin Digital",
-        "content": "Suite à la création du site web de Cédille formation, je suis satisfait de notre collaboration avec Vivian. Son écoute attentive et sa pédagogie ont grandement facilité la compréhension de chaque étape du processus, surtout pour une novice comme moi. Vivian a su répondre efficacement à nos attentes et adapter le site à nos exigences. Son professionnalisme et son expertise ont contribué à la mise en place de ce projet. Je recommande vivement les services de Vivian."
-      },
-      {
-        "img": "https://www.les-jardins-de-la-drome.fr/wp-content/uploads/2023/08/les-jardins-de-la-drome_logo.png",
-        "name": "David Escandell",
-        "role": null,
-        "enterprise": "Les jardins de la Drôme",
-        "content": "Vivian a su saisir le projet, comprendre nos attentes et exigences. Nous sommes très satisfaits du travail accompli, du référencement du site. Il a contribué à la réussite de ce projet. Je recommande vivement ses services pour toute entreprise cherchant à développer une présence en ligne de qualité. Un grand merci à Vivian."
-      }
-    ]
-  },
-  "contactSection": {
-    "title": "Contact"
-  }
 }

@@ -1,129 +1,128 @@
 {
-  "heroSection": {
-    "part1": "Hey there! I'm -",
-    "name": "Vivian Bruchon",
-    "buisiness": "WEB DEVELOPER",
-    "part2": "Passionate about coding and web experiences, I enjoy turning an idea into a tangible project.",
-    "incitation": "Explore my web projects by navigating through the rest of my portfolio."
-  },
-  "skillSection": {
-    "title": "Skills",
-    "category1": "Web Development",
-    "category2": "Others"
-  },
-  "projectSection": {
-    "title": "Projects",
-    "list": [
-      {
-        "title": "The North Face Clone",
-        "description": "A cloning project of The North Face clothing brand, showcasing design and development skills to recreate an immersive visual experience.",
-        "githubUrl": "https://github.com/vbruchon",
-        "demoUrl": "https://vivianb.fr/",
-        "thumbnailUrl": "src/assets/project1.png"
-      },
-      {
-        "title": "La Marine Perfume",
-        "description": "A dedicated website for La Marine perfume, highlighting its history, exquisite notes, and providing an elegant experience for fragrance enthusiasts.",
-        "githubUrl": "https://github.com/vbruchon",
-        "demoUrl": "https://melvynx.com/#contact",
-        "thumbnailUrl": "src/assets/project2.png"
-      },
-      {
-        "title": "Sales Dashboard",
-        "description": "A sophisticated business dashboard designed to enable efficient sales control, offering in-depth analytics and intuitive features for optimal management.",
-        "githubUrl": "https://github.com/vbruchon",
-        "demoUrl": "https://vivianb.fr/",
-        "thumbnailUrl": "src/assets/project3.png"
-      }
-    ]
-  },
-  "aboutSection": {
-    "title": "About",
-    "aboutMeSection": {
-      "button": "About Me",
-      "text1": "Hello, I'm Vivian Bruchon, a web developer based in Valence in Drôme (France).",
-      "text2": "I'm specialize in building modern and responsive web applications using the latest technologies. With a keen eye for design and a passion for coding, I strive to create beautiful and user-friendly digital experiences.",
-      "text3": "Let's connect and create something amazing together!"
+    "heroSection": {
+        "part1": "Hey there! I'm -",
+        "name": "Vivian Bruchon",
+        "buisiness": "WEB DEVELOPER",
+        "part2": "Passionate about coding and web experiences, I enjoy turning an idea into a tangible project.",
+        "incitation": "Explore my web projects by navigating through the rest of my portfolio."
     },
-    "experienceSection": {
-      "button": "Experiences",
-      "experiences": [
-        {
-          "title": "NextReact Courses",
-          "date": "December 2023",
-          "link": "https://codelynx.dev/beginreact",
-          "type": "courses",
-          "img": "src/assets/logo_NextReact.png",
-          "description": "Following BeginReact, exploration of Next.js and its concepts and ecosystem."
+    "skillSection": {
+        "title": "Skills",
+        "category1": "Web Development",
+        "category2": "Others"
+    },
+    "projectSection": {
+        "title": "Latest Projects",
+        "list": [
+            {
+                "title": "Les Jardins de la Drôme",
+                "description": "Creation of the new Les Jardins de la Drôme website to meet their latest requirements.",
+                "demoUrl": "https://les-jardins-de-la-drome.fr/",
+                "thumbnailUrl": "src/assets/projects/les_jardins_de_la_drome.png"
+            },
+            {
+                "title": "Web Application for Event Scheduling",
+                "description": "Development of a web application streamlining event entry. User rights management, event listing display, and ICS conversion for implementation in a calendar view.",
+                "githubUrl": "https://github.com/vbruchon",
+                "demoUrl": "https://archimede.vivianb.fr/login",
+                "thumbnailUrl": "src/assets/projects/archimede.png"
+            },
+            {
+                "title": "Cédille Formation: Mutualized Courses Organization",
+                "description": "Transformation of a landing page into a comprehensive website for Cédille Formation, integrating both showcase and training catalog. Backend server enhancements and dashboard customization to meet client expectations.",
+                "githubUrl": "https://github.com/vbruchon/Cedille",
+                "demoUrl": "https://cedille-formation.fr/",
+                "thumbnailUrl": "src/assets/projects/cedille_formation.png"
+            }
+        ]
+    },
+    "aboutSection": {
+        "title": "About",
+        "aboutMeSection": {
+            "button": "About Me",
+            "text1": "Hello, I'm Vivian Bruchon, a web developer based in Valence in Drôme (France).",
+            "text2": "I'm specialize in building modern and responsive web applications using the latest technologies. With a keen eye for design and a passion for coding, I strive to create beautiful and user-friendly digital experiences.",
+            "text3": "Let's connect and create something amazing together!"
         },
-        {
-          "title": "BeginReact Courses",
-          "date": "November 2023",
-          "link": "https://codelynx.dev/beginreact",
-          "type": "courses",
-          "img": "src/assets/logo_BeginReact.png",
-          "description": "Courses on the React framework, its basic concepts, and ecosystem."
-        },
-        {
-          "title": "Web Developer",
-          "date": "June 2023 - July 2023",
-          "link": "https://lemoulindigital.fr/",
-          "description": "To conclude the internship projects, continued the journey with Le Moulin Digital.",
-          "type": "experience",
-          "img": "src/assets/logo_Le-moulin-digital.png"
-        },
-        {
-          "title": "Web Developer Internship",
-          "date": "July 2022 - June 2023",
-          "link": "https://lemoulindigital.fr/",
-          "description": "After completing the first phase of my training at the campus, I had the opportunity to do my internship at Le Moulin Digital. This one-year experience allowed me to complete several significant projects, Mardinnov', Cédille Formation, Archimède. Working independently on these projects with the support of a mentor, I took charge of the entire process, from prototyping to final delivery, while maintaining regular follow-ups with clients.",
-          "type": "experience",
-          "img": "src/assets/logo_Le-moulin-digital.png"
-        },
-        {
-          "title": "Web & Apps Developer Training",
-          "date": "December 2021 - June 2023",
-          "link": "https://le-campus-numerique.fr/",
-          "description": "My 18-month journey at the Campus Numérique was a complete immersion into the world of Web & Apps Developer. The first 6 months laid the foundations for my technical and collaborative skills, while the 12-month internship phase provided an opportunity to deepen these skills while applying them in real professional contexts.",
-          "type": "courses",
-          "img": "src/assets/logo_Campus-numerique.png"
+        "experienceSection": {
+            "button": "Experiences",
+            "experiences": [
+                {
+                    "title": "NextReact Courses",
+                    "date": "December 2023",
+                    "link": "https://codelynx.dev/beginreact",
+                    "type": "courses",
+                    "img": "src/assets/logo_NextReact.png",
+                    "description": "Following BeginReact, exploration of Next.js and its concepts and ecosystem."
+                },
+                {
+                    "title": "BeginReact Courses",
+                    "date": "November 2023",
+                    "link": "https://codelynx.dev/beginreact",
+                    "type": "courses",
+                    "img": "src/assets/logo_BeginReact.png",
+                    "description": "Courses on the React framework, its basic concepts, and ecosystem."
+                },
+                {
+                    "title": "Web Developer",
+                    "date": "June 2023 - July 2023",
+                    "link": "https://lemoulindigital.fr/",
+                    "description": "To conclude the internship projects, continued the journey with Le Moulin Digital.",
+                    "type": "experience",
+                    "img": "src/assets/logo_Le-moulin-digital.png"
+                },
+                {
+                    "title": "Web Developer Internship",
+                    "date": "July 2022 - June 2023",
+                    "link": "https://lemoulindigital.fr/",
+                    "description": "After completing the first phase of my training at the campus, I had the opportunity to do my internship at Le Moulin Digital. This one-year experience allowed me to complete several significant projects, Mardinnov', Cédille Formation, Archimède. Working independently on these projects with the support of a mentor, I took charge of the entire process, from prototyping to final delivery, while maintaining regular follow-ups with clients.",
+                    "type": "experience",
+                    "img": "src/assets/logo_Le-moulin-digital.png"
+                },
+                {
+                    "title": "Web & Apps Developer Training",
+                    "date": "December 2021 - June 2023",
+                    "link": "https://le-campus-numerique.fr/",
+                    "description": "My 18-month journey at the Campus Numérique was a complete immersion into the world of Web & Apps Developer. The first 6 months laid the foundations for my technical and collaborative skills, while the 12-month internship phase provided an opportunity to deepen these skills while applying them in real professional contexts.",
+                    "type": "courses",
+                    "img": "src/assets/logo_Campus-numerique.png"
+                }
+            ]
         }
-      ]
+    },
+    "testimonialSection": {
+        "title": "Testimonials",
+        "testimonials": [
+            {
+                "img": "https://media.licdn.com/dms/image/D4D03AQGvNhSA6TmaGA/profile-displayphoto-shrink_200_200/0/1697121222742?e=1710979200&v=beta&t=1WORM14SdOT34n92U5ekHsY6Zz3QGxk-haKlDZGDNPc",
+                "name": "Xavier Masclaux",
+                "role": "Project Manager",
+                "enterprise": "Le Moulin Digital",
+                "content": "Vivian understood our needs and developed tailored solutions. Autonomous and responsive, he solved problems by seeking necessary information or referring to his peers. His ability to adapt to project changes and train users was appreciated. Overall, he exceeded our expectations and integrated fully into our team."
+            },
+            {
+                "img": "https://media.licdn.com/dms/image/C4E03AQF_kDjXj0ClQQ/profile-displayphoto-shrink_200_200/0/1641303210793?e=1710979200&v=beta&t=1DWm-jS4MLFf1EmCEMranoKkP3N5DOez08A0Hyx_rPY",
+                "name": "Jean-Philippe Falavel",
+                "role": "Mardinnov' Representative",
+                "enterprise": "Le Moulin Digital",
+                "content": "Vivian worked on the redesign of the www.mardinnov.com website in 2022 on Wordpress. Based on the newly created graphic charter, he completely created the new website. Very attentive to needs and proactive, he was very responsive and adhered to the schedule of the specifications. I recommend him for his professionalism!"
+            },
+            {
+                "img": "https://media.licdn.com/dms/image/C4E03AQHIYPIUy4wzmA/profile-displayphoto-shrink_200_200/0/1657047246625?e=1710979200&v=beta&t=gbHtnh7ywX9YZXUP9s3hOaq7wU7pFojqPjlD7954dwQ",
+                "name": "Stéphanie Escandell",
+                "role": "Cédille Formation Manager",
+                "enterprise": "Le Moulin Digital",
+                "content": "Following the creation of the Cédille Formation website, I am satisfied with our collaboration with Vivian. His attentive listening and pedagogy greatly facilitated the understanding of each stage of the process, especially for a novice like me. Vivian was able to respond effectively to our expectations and adapt the site to our requirements. His professionalism and expertise contributed to the implementation of this project. I highly recommend Vivian's services."
+            },
+            {
+                "img": "https://www.les-jardins-de-la-drome.fr/wp-content/uploads/2023/08/les-jardins-de-la-drome_logo.png",
+                "name": "David Escandell",
+                "enterprise": "Les Jardins de la Drôme",
+                "content": "Vivian understood the project, understood our expectations and requirements. We are very satisfied with the work done, with the website SEO. He contributed to the success of this project. I highly recommend his services for any company looking to develop a quality online presence. A big thank you to Vivian."
+            }
+        ]
+    },
+    "contactSection": {
+        "title": "Contact"
     }
-  },
-  "testimonialSection": {
-    "title": "Testimonials",
-    "testimonials": [
-      {
-        "img": "https://media.licdn.com/dms/image/D4D03AQGvNhSA6TmaGA/profile-displayphoto-shrink_200_200/0/1697121222742?e=1710979200&v=beta&t=1WORM14SdOT34n92U5ekHsY6Zz3QGxk-haKlDZGDNPc",
-        "name": "Xavier Masclaux",
-        "role": "Project Manager",
-        "enterprise": "Le Moulin Digital",
-        "content": "Vivian understood our needs and developed tailored solutions. Autonomous and responsive, he solved problems by seeking necessary information or referring to his peers. His ability to adapt to project changes and train users was appreciated. Overall, he exceeded our expectations and integrated fully into our team."
-      },
-      {
-        "img": "https://media.licdn.com/dms/image/C4E03AQF_kDjXj0ClQQ/profile-displayphoto-shrink_200_200/0/1641303210793?e=1710979200&v=beta&t=1DWm-jS4MLFf1EmCEMranoKkP3N5DOez08A0Hyx_rPY",
-        "name": "Jean-Philippe Falavel",
-        "role": "Mardinnov' Representative",
-        "enterprise": "Le Moulin Digital",
-        "content": "Vivian worked on the redesign of the www.mardinnov.com website in 2022 on Wordpress. Based on the newly created graphic charter, he completely created the new website. Very attentive to needs and proactive, he was very responsive and adhered to the schedule of the specifications. I recommend him for his professionalism!"
-      },
-      {
-        "img": "https://media.licdn.com/dms/image/C4E03AQHIYPIUy4wzmA/profile-displayphoto-shrink_200_200/0/1657047246625?e=1710979200&v=beta&t=gbHtnh7ywX9YZXUP9s3hOaq7wU7pFojqPjlD7954dwQ",
-        "name": "Stéphanie Escandell",
-        "role": "Cédille Formation Manager",
-        "enterprise": "Le Moulin Digital",
-        "content": "Following the creation of the Cédille Formation website, I am satisfied with our collaboration with Vivian. His attentive listening and pedagogy greatly facilitated the understanding of each stage of the process, especially for a novice like me. Vivian was able to respond effectively to our expectations and adapt the site to our requirements. His professionalism and expertise contributed to the implementation of this project. I highly recommend Vivian's services."
-      },
-      {
-        "img": "https://www.les-jardins-de-la-drome.fr/wp-content/uploads/2023/08/les-jardins-de-la-drome_logo.png",
-        "name": "David Escandell",
-        "enterprise": "Les Jardins de la Drôme",
-        "content": "Vivian understood the project, understood our expectations and requirements. We are very satisfied with the work done, with the website SEO. He contributed to the success of this project. I highly recommend his services for any company looking to develop a quality online presence. A big thank you to Vivian."
-      }
-    ]
-  },
-  "contactSection": {
-    "title": "Contact"
-  }
 }
