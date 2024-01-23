@@ -3,56 +3,64 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --background: 209, 100%, 92%;
-    --foreground: 243, 76%, 5%;
-    --card: 209, 100%, 92%;
-    --card-foreground: 243, 76%, 95%;
-    --popover: 209, 100%, 92%;
-    --popover-foreground: 243, 76%, 95%;
-    --primary: 29, 100%, 47%;
-    --primary-foreground: 243, 76%, 95%;
-    --secondary: 243, 100%, 7%;
-    --secondary-foreground: 29, 100%, 53%;
-    --muted: 243, 100%, 7%;
-    --muted-foreground: 29, 100%, 53%;
-    --accent: 243, 100%, 7%;
-    --accent-foreground: 29, 100%, 53%;
-    --destructive: 209, 100%, 92%;
-    --destructive-foreground: 243, 76%, 95%;
-    --border: 243, 76%, 95%;
-    --input: 243, 76%, 95%;
-    --ring: 29, 100%, 47%;
-    --radius: 0.5rem;
-  }
+    :root {
+        --background: 209, 100%, 92%;
+        --foreground: 243, 76%, 5%;
+        --card: 211, 90%, 87%;
+        --card-foreground: 243, 76%, 5%;
+        --popover: 209, 100%, 92%;
+        --popover-foreground: 243, 76%, 5%;
+        --primary: 29, 100%, 47%;
+        --primary-foreground: 243, 76%, 5%;
+        --secondary: 243, 100%, 7%;
+        --secondary-foreground: 29, 100%, 53%;
+        --muted: 243, 100%, 7%;
+        --muted-foreground: 29, 100%, 53%;
+        --accent: 243, 100%, 7%;
+        --accent-foreground: 29, 100%, 53%;
+        --destructive: 209, 100%, 92%;
+        --destructive-foreground: 243, 76%, 5%;
+        --border: 243, 76%, 5%;
+        --input: 243, 76%, 5%;
+        --ring: 29, 100%, 47%;
+    }
 
-  .dark {
-    --background: 209, 100%, 8%;
-    --foreground: 243, 76%, 95%;
-    --card: 209, 80%, 12%;
-    --card-foreground: 243, 76%, 5%;
-    --popover: 209, 100%, 8%;
-    --popover-foreground: 243, 76%, 5%;
-    --primary: 29, 100%, 53%;
-    --primary-foreground: 243, 76%, 5%;
-    --secondary: 243, 100%, 93%;
-    --secondary-foreground: 29, 100%, 53%;
-    --muted: 243, 100%, 93%;
-    --muted-foreground: 24, 5.3%, 44.7%;
-    --accent: 243, 100%, 93%;
-    --accent-foreground: 29, 100%, 53%;
-    --destructive: 209, 100%, 8%;
-    --destructive-foreground: 243, 76%, 5%;
-    --border: 243, 76%, 5%;
-    --input: 243, 76%, 5%;
-    --ring: 29, 100%, 53%;
-  }
+    .dark {
+        --background: 209, 100%, 8%;
+        --foreground: 243, 76%, 95%;
+        --card: 209, 90%, 12%;
+        --card-foreground: 243, 76%, 5%;
+        --popover: 209, 100%, 8%;
+        --popover-foreground: 243, 76%, 5%;
+        --primary: 29, 100%, 53%;
+        --primary-foreground: 243, 76%, 5%;
+        --secondary: 243, 100%, 93%;
+        --secondary-foreground: 29, 100%, 53%;
+        --muted: 243, 100%, 93%;
+        --muted-foreground: 24, 5.3%, 44.7%;
+        --accent: 243, 100%, 93%;
+        --accent-foreground: 29, 100%, 53%;
+        --destructive: 209, 100%, 8%;
+        --destructive-foreground: 243, 76%, 5%;
+        --border: 243, 76%, 5%;
+        --input: 243, 76%, 5%;
+        --ring: 29, 100%, 53%;
+    }
 }
 @layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+        font-family: 'Palanquin Dark', sans-serif;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Rubik Mono One', sans-serif;
+    }
 }

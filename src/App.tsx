@@ -6,6 +6,7 @@ import { ProjectSection } from './components/features/section/project/ProjectSec
 import { Skills } from './components/features/section/skills/Skills'
 import { Testimonial } from './components/features/section/testimonial/Testimonial'
 import { ThemeProvider } from './components/theme/ThemeProvider'
+import GoogleFontLoader from 'react-google-font-loader'
 
 import i18next from 'i18next'
 import { I18nextProvider } from 'react-i18next'
@@ -34,6 +35,12 @@ function App() {
     return (
         <ThemeProvider>
             <I18nextProvider i18n={i18next}>
+                <GoogleFontLoader
+                    fonts={[
+                        { font: 'Rubik Mono One', weights: [400] },
+                        { font: 'Palanquin Dark', weights: [400] },
+                    ]}
+                />
                 <Header
                     changeLanguage={changeLanguage}
                     currentLanguage={currentLanguage}
