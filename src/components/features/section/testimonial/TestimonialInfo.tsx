@@ -1,16 +1,7 @@
 import { cn } from '@/lib/utils'
+import { TestimonialProps } from './TestimonialItem'
 
-export type TestimonialInfoProps = {
-    testimonial: {
-        img: string
-        name: string
-        role?: string
-        enterprise: string
-        content: string
-    }
-}
-
-export const TestimonialInfo = ({ testimonial }: TestimonialInfoProps) => {
+export const TestimonialInfo = ({ testimonial }: TestimonialProps) => {
     return (
         <div
             className={cn(
@@ -19,12 +10,13 @@ export const TestimonialInfo = ({ testimonial }: TestimonialInfoProps) => {
                 'lg:items-center'
             )}
         >
-            <img
-                alt="Man"
-                src={testimonial.img}
-                className="h-16 w-16 rounded-full object-cover lg:mr-4"
-            />
-
+            <a href={testimonial.link} target="_blank" rel="noreferrer">
+                <img
+                    alt="Man"
+                    src={testimonial.img}
+                    className="h-16 w-16 rounded-full object-cover lg:mr-4"
+                />
+            </a>
             <div
                 className={cn(
                     'ml-4 flex flex-col text-center leading-relaxed',
@@ -48,7 +40,13 @@ export const TestimonialInfo = ({ testimonial }: TestimonialInfoProps) => {
                             </p>
                         </>
                     )}
-                    <p className="ml-1">{testimonial.enterprise}</p>
+                    <a
+                        href={testimonial.enterpriseLink}
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <span className="ml-1">{testimonial.enterprise}</span>
+                    </a>
                 </div>
             </div>
         </div>
