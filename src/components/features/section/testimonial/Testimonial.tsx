@@ -5,15 +5,22 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import Slider from 'react-slick'
 import { useTranslation } from 'react-i18next'
-import { Layout, LayoutContent, LayoutHeader, LayoutTitle } from '../../Layout'
+import {
+    Layout,
+    LayoutContent,
+    LayoutHeader,
+    LayoutTitle,
+} from '../../../layout/Layout'
 import { TestimonialItem } from './TestimonialItem'
 import { useSectionIsVisible } from '@/hooks/useSectionIsVisible'
 
-type TestimonialData = {
+export type TestimonialProps = {
     img: string
+    link?: string
     name: string
     role?: string
     enterprise: string
+    enterpriseLink: string
     content: string
 }
 
@@ -36,7 +43,7 @@ export const Testimonial: FC = () => {
         visible: { opacity: 1, y: 0 },
     }
 
-    const testimonials: TestimonialData[] = t(
+    const testimonials: TestimonialProps[] = t(
         'testimonialSection.testimonials',
         {
             returnObjects: true,

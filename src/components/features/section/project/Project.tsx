@@ -10,20 +10,26 @@ type ProjectProps = {
     index: number
 }
 
-const item = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-        opacity: 1,
-        y: 0,
-        transition: {
-            duration: 0.8,
-            ease: 'easeInOut',
-        },
-    },
-}
-
 export const Project = ({ project }: ProjectProps) => {
     const controls = useSectionIsVisible('project-element')
+
+    const item = {
+        hidden: { opacity: 0, y: 20 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.8,
+                ease: 'easeInOut',
+            },
+        },
+        hover: {
+            scale: 1.05,
+            transition: {
+                duration: 0.05,
+            },
+        },
+    }
 
     return (
         <motion.div
@@ -31,9 +37,10 @@ export const Project = ({ project }: ProjectProps) => {
             variants={item}
             animate={controls}
             initial="hidden"
+            whileHover="hover"
             className={cn(
-                'relative h-full w-full rounded-xl border bg-card transition-all hover:scale-105',
-                'lg:h-[585px] lg:w-1/3 xl:h-[480px]'
+                'relative h-full w-full transform rounded-xl bg-card shadow-sm shadow-foreground transition-transform hover:scale-110',
+                'ml-2 lg:h-[610px] lg:w-1/2 xl:h-[575px] xl:w-1/3 2xl:h-[550px]'
             )}
         >
             <img
@@ -45,11 +52,13 @@ export const Project = ({ project }: ProjectProps) => {
                     borderBottomRightRadius: 0,
                 }}
             />
-            <CardContent className="mt-auto flex flex-grow flex-col">
-                <h3 className="mb-2 text-lg font-semibold text-foreground">
+            <CardContent className="my-auto flex flex-col">
+                <h3 className="mb-2 text-center text-2xl font-semibold text-foreground lg:text-xl">
                     {project.title}
                 </h3>
-                <p className="mb-4 text-foreground">{project.description}</p>
+                <p className="mb-4 text-foreground xl:mt-3">
+                    {project.description}
+                </p>
                 <ProjectLinks
                     githubUrl={project.githubUrl}
                     demoUrl={project.demoUrl}

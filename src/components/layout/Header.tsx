@@ -1,7 +1,7 @@
 import { ToggleThemeButton } from '@/components/theme/ThemeToggle'
-import { Nav } from './Nav'
-import { LanguageSwitcher } from '@/components/locales/LanguageSwitcher'
+import { Nav } from '../features/navigation/Nav'
 import { LanguageType } from '@/App'
+import { LanguageSwitcher } from '../features/lang/LanguageSwitcher'
 
 export type LanguagePropsType = {
     currentLanguage: LanguageType

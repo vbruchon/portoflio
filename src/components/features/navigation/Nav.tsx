@@ -2,9 +2,9 @@ import { Button } from '@/components/ui/button'
 import { AlignRight } from 'lucide-react'
 import { useState } from 'react'
 import { NavItem } from './NavItem'
-import { MobileMenu } from './MobileMenu'
+import { MobileMenu } from './mobile/MobileMenu'
 import { useTranslation } from 'react-i18next'
-import { LanguagePropsType } from './Header'
+import { LanguagePropsType } from '../../layout/Header'
 
 type NavProps = {
     children: React.ReactNode

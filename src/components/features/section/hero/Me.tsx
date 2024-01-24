@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 
-const Me = () => {
-    const meVariants = {
+export const Me = () => {
+    const meImgVariant = {
         hidden: { opacity: 0, scale: 0.8 },
         visible: {
             opacity: 1,
@@ -19,9 +19,7 @@ const Me = () => {
             className="mx-auto mb-2 w-[60%] md:w-[45%] lg:h-[350px] lg:w-[350px] "
             initial="hidden"
             animate="visible"
-            variants={meVariants}
+            variants={meImgVariant}
         />
     )
 }
-
-export default Me

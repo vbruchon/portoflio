@@ -15,8 +15,8 @@ export const SectionButton = ({
 
     const baseStyle =
         'text-lg lg:text-xl font-semibold px-4 focus:outline-none transition-all'
-    const activeStyle = 'bg-primary p-2 rounded-lg'
-    const hoverStyle = 'hover:bg-primary hover:rounded-lg'
+    const activeStyle = 'bg-primary p-2 rounded-xl'
+    const hoverStyle = 'hover:bg-primary hover:rounded-xl'
 
     const buttonStyle =
         activeSection === section

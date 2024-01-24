@@ -2,17 +2,17 @@ import { useSectionIsVisible } from '@/hooks/useSectionIsVisible'
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 
-const item = {
-    hidden: { y: -25, opacity: 0 },
-    visible: {
-        y: 0,
-        opacity: 1,
-    },
-}
-
 export const About = ({ avatarSrc = '/src/assets/me.png' }) => {
     const controls = useSectionIsVisible('about')
     const { t } = useTranslation('global')
+
+    const item = {
+        hidden: { y: -25, opacity: 0 },
+        visible: {
+            y: 0,
+            opacity: 1,
+        },
+    }
 
     return (
         <div id="about" className="mx-auto md:container">

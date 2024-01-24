@@ -1,7 +1,7 @@
 import { cn } from '@/lib/utils'
-import { TestimonialProps } from './TestimonialItem'
+import { TestimonialItemProps } from './TestimonialItem'
 
-export const TestimonialInfo = ({ testimonial }: TestimonialProps) => {
+export const TestimonialInfo = ({ testimonial }: TestimonialItemProps) => {
     return (
         <div
             className={cn(

@@ -1,19 +1,12 @@
 import { cn } from '@/lib/utils'
 import { TestimonialInfo } from './TestimonialInfo'
+import { TestimonialProps } from './Testimonial'
 
-export type TestimonialProps = {
-    testimonial: {
-        img: string
-        link?: string
-        name: string
-        role?: string
-        enterprise: string
-        enterpriseLink: string
-        content: string
-    }
+export type TestimonialItemProps = {
+    testimonial: TestimonialProps
 }
 
-export const TestimonialItem = ({ testimonial }: TestimonialProps) => {
+export const TestimonialItem = ({ testimonial }: TestimonialItemProps) => {
     return (
         <blockquote
             className={cn(

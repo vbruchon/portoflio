@@ -4,16 +4,6 @@ import { motion } from 'framer-motion'
 import { useSectionIsVisible } from '@/hooks/useSectionIsVisible'
 import { useTranslation } from 'react-i18next'
 
-const container = {
-    hidden: { opacity: 0 },
-    visible: {
-        opacity: 1,
-        transition: {
-            delayChildren: 0.3,
-        },
-    },
-}
-
 export type ExperienceType = {
     title: string
     date: string
@@ -23,7 +13,7 @@ export type ExperienceType = {
     description: string
 }
 
-const Resume = () => {
+export const Resume = () => {
     const { t } = useTranslation('global')
     const controls = useSectionIsVisible('resume-container')
 
@@ -33,6 +23,15 @@ const Resume = () => {
             returnObjects: true,
         }
     )
+    const container = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                delayChildren: 0.3,
+            },
+        },
+    }
 
     return (
         <motion.div
@@ -54,5 +53,3 @@ const Resume = () => {
         </motion.div>
     )
 }
-
-export default Resume

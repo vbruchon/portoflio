@@ -1,18 +1,13 @@
 import { motion } from 'framer-motion'
-import { Layout, LayoutContent, LayoutHeader, LayoutTitle } from '../../Layout'
+import {
+    Layout,
+    LayoutContent,
+    LayoutHeader,
+    LayoutTitle,
+} from '../../../layout/Layout'
 import { Project } from './Project'
 import { useSectionIsVisible } from '@/hooks/useSectionIsVisible'
 import { useTranslation } from 'react-i18next'
-
-const container = {
-    hidden: { opacity: 0 },
-    visible: {
-        opacity: 1,
-        transition: {
-            staggerChildren: 1,
-        },
-    },
-}
 
 export type ProjectType = {
     title: string
@@ -29,6 +24,16 @@ export const ProjectSection = () => {
         returnObjects: true,
     })
 
+    const container = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 1,
+            },
+        },
+    }
+
     return (
         <Layout id="projects">
             <LayoutHeader>
@@ -43,7 +48,7 @@ export const ProjectSection = () => {
                     initial="hidden"
                     animate={controls}
                 >
-                    <div className="flex flex-col items-center gap-8 lg:flex-row lg:gap-3">
+                    <div className="flex flex-col items-center gap-8 lg:flex-row lg:gap-4">
                         {projects.map((project, index) => (
                             <Project
                                 key={project.title}

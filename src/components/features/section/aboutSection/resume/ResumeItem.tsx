@@ -1,7 +1,17 @@
 import { useSectionIsVisible } from '@/hooks/useSectionIsVisible'
-import { ResumeItemProps } from '@/lib/data'
 import { cn } from '@/lib/utils'
 import { motion } from 'framer-motion'
+
+export type ResumeItemProps = {
+    data: {
+        title: string
+        link: string
+        img: string
+        date: string
+        description: string
+        type: 'experience' | 'courses'
+    }
+}
 
 export const ResumeItem = ({ data }: ResumeItemProps) => {
     const isCourse = data.type === 'courses'
@@ -44,7 +54,10 @@ export const ResumeItem = ({ data }: ResumeItemProps) => {
             <div
                 className={`z-20 order-1 mb-2 flex h-28 w-28 items-center rounded-full border-2 border-primary shadow-xl md:mb-0 `}
             >
-                <motion.a href={data.link}>
+                <motion.a
+                    href={data.link}
+                    whileHover={{ scale: 1.05, transition: { duration: 0.05 } }}
+                >
                     <img
                         src={data.img}
                         alt="Avatar"
@@ -54,7 +67,7 @@ export const ResumeItem = ({ data }: ResumeItemProps) => {
             </div>
             <motion.div
                 className={cn(
-                    'z-20 order-1 rounded-lg bg-card px-4 py-4 shadow-xl md:w-5/12 md:px-6'
+                    'z-20 order-1 rounded-xl bg-card px-4 py-4 shadow-xl md:w-5/12 md:px-6'
                 )}
                 initial="hidden"
                 animate={controls}

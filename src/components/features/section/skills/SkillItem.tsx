@@ -7,16 +7,16 @@ export type SkillItemProps = {
     }
 }
 
-const item = {
-    hidden: { y: -25, opacity: 0 },
-    visible: { y: 0, opacity: 1 },
-}
-
 export const SkillItem = ({ skill }: SkillItemProps) => {
+    const item = {
+        hidden: { y: -25, opacity: 0 },
+        visible: { y: 0, opacity: 1 },
+    }
+
     return (
         <motion.div
             variants={item}
-            className="w-1/7 flex flex-col items-center gap-4 rounded-lg border bg-card p-4 shadow-md"
+            className="w-1/7 flex flex-col items-center gap-4 rounded-xl  bg-card p-4"
         >
             <img
                 src={skill.icon}

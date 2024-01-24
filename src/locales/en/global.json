@@ -52,7 +52,7 @@
                     "date": "December 2023",
                     "link": "https://codelynx.dev/beginreact",
                     "type": "courses",
-                    "img": "src/assets/logo_NextReact.png",
+                    "img": "src/assets/resume/logo_NextReact.png",
                     "description": "Following BeginReact, exploration of Next.js and its concepts and ecosystem."
                 },
                 {
@@ -60,7 +60,7 @@
                     "date": "November 2023",
                     "link": "https://codelynx.dev/beginreact",
                     "type": "courses",
-                    "img": "src/assets/logo_BeginReact.png",
+                    "img": "src/assets/resume/logo_BeginReact.png",
                     "description": "Courses on the React framework, its basic concepts, and ecosystem."
                 },
                 {
@@ -69,7 +69,7 @@
                     "link": "https://lemoulindigital.fr/",
                     "description": "To conclude the internship projects, continued the journey with Le Moulin Digital.",
                     "type": "experience",
-                    "img": "src/assets/logo_Le-moulin-digital.png"
+                    "img": "src/assets/resume/logo_Le-moulin-digital.png"
                 },
                 {
                     "title": "Web Developer Internship",
@@ -77,7 +77,7 @@
                     "link": "https://lemoulindigital.fr/",
                     "description": "After completing the first phase of my training at the campus, I had the opportunity to do my internship at Le Moulin Digital. This one-year experience allowed me to complete several significant projects, Mardinnov', Cédille Formation, Archimède. Working independently on these projects with the support of a mentor, I took charge of the entire process, from prototyping to final delivery, while maintaining regular follow-ups with clients.",
                     "type": "experience",
-                    "img": "src/assets/logo_Le-moulin-digital.png"
+                    "img": "src/assets/resume/logo_Le-moulin-digital.png"
                 },
                 {
                     "title": "Web & Apps Developer Training",
@@ -85,7 +85,7 @@
                     "link": "https://le-campus-numerique.fr/",
                     "description": "My 18-month journey at the Campus Numérique was a complete immersion into the world of Web & Apps Developer. The first 6 months laid the foundations for my technical and collaborative skills, while the 12-month internship phase provided an opportunity to deepen these skills while applying them in real professional contexts.",
                     "type": "courses",
-                    "img": "src/assets/logo_Campus-numerique.png"
+                    "img": "src/assets/resume/logo_Campus-numerique.png"
                 }
             ]
         }

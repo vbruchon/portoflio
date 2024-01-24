@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Resume from '../resume/Resume'
+import { Resume } from '../resume/Resume'
 import { About } from '../About'
 import { SectionButton } from './SectionButton'
 
