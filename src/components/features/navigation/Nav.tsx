@@ -5,16 +5,21 @@ import { NavItem } from './NavItem'
 import { MobileMenu } from './mobile/MobileMenu'
 import { useTranslation } from 'react-i18next'
 import { LanguagePropsType } from '../../layout/Header'
+import { cn } from '@/lib/utils'
 
 type NavProps = {
     children: React.ReactNode
+    changeLanguage: LanguagePropsType['changeLanguage']
+    currentLanguage: LanguagePropsType['currentLanguage']
+    className?: string
 }
 
 export const Nav = ({
     children,
     changeLanguage,
     currentLanguage,
-}: NavProps & LanguagePropsType) => {
+    className,
+}: NavProps) => {
     const { t } = useTranslation('global')
 
     const links = [
@@ -34,7 +39,7 @@ export const Nav = ({
     return (
         <div>
             <div className="hidden md:flex md:items-center">
-                <nav className="flex items-center gap-8">
+                <nav className={cn('flex items-center gap-8', className)}>
                     {links.map((link) => (
                         <NavItem
                             key={link.name}

@@ -11,6 +11,7 @@ import global_fr from './locales/fr/global.json'
 
 import Portfolio from '../pages/Portfolio'
 import MentionsLegales from '../pages/Mentions-legales'
+import Footer from './components/layout/Footer'
 
 i18next.init({
     interpolation: { escapeValue: false },
@@ -58,6 +59,10 @@ function App() {
                 <main className="mx-[5%] md:mx-[10%] xl:mx-[15%]">
                     <RouterProvider router={router} />
                 </main>
+                <Footer
+                    changeLanguage={changeLanguage}
+                    currentLanguage={currentLanguage}
+                />
             </I18nextProvider>
         </ThemeProvider>
     )

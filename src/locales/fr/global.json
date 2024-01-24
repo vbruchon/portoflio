@@ -135,5 +135,8 @@
     "contactSection": {
         "title": "Contact",
         "content": "N'hésitez pas à me contacter par email, par Linkedin ou regarder mon activité sur github"
+    },
+    "footer": {
+        "updatedAt": "Dernières mise à jour : Janvier 2024"
     }
 }

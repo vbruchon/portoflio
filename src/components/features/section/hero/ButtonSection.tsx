@@ -6,7 +6,7 @@ const container = {
     hidden: { opacity: 0, x: -20 },
     visible: { opacity: 1, x: 0, transition: { delay: 1.2, duration: 0.8 } },
 }
-export const ButtonSection = ({ reverse = false }) => {
+export const ButtonSection = ({ reverse = false, className = '' }) => {
     const socialNetworks = [
         {
             name: 'Github',
@@ -27,7 +27,7 @@ export const ButtonSection = ({ reverse = false }) => {
 
     return (
         <motion.div
-            className={`flex flex-wrap justify-center gap-4 md:flex-nowrap md:justify-start ${reverse ? 'flex-row-reverse' : ''}`}
+            className={`flex flex-wrap justify-center gap-4 md:flex-nowrap md:justify-start ${reverse ? 'flex-row-reverse' : ''} ${className}`}
             initial="hidden"
             animate="visible"
             variants={container}
