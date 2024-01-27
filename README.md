@@ -1,30 +1,25 @@
-# React + TypeScript + Vite
+# Vivian Bruchon's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my portfolio! I'm Vivian Bruchon, a web developer passionate about creating online experiences.
 
-Currently, two official plugins are available:
+## About Me
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+In this project, I share information about my professional journey, skills, and my passion for web development. Explore the different sections to learn more about my experiences, recent projects, skills, and feedback received for my work.
 
-## Expanding the ESLint configuration
+## Portfolio Content
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Professional Journey:** Discover my educational background, professional experiences, and the milestones that have shaped my career.
 
-- Configure the top-level `parserOptions` property like this:
+- **Skills:** Check out the various skills I've acquired over the years. From front-end technologies to back-end development and more, this section provides insights into my capabilities.
+  
+- **Recent Projects:** Explore the latest projects I've worked on. Each project has its own space with details, screenshots, and links to the corresponding GitHub repositories.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- **Feedback and Reviews:** Browse through comments and feedback received for my projects. Client and user satisfaction are my priorities, and these testimonials reflect my commitment to quality.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## How to Navigate
+
+The portfolio is designed for simple and intuitive navigation. Use the navigation bar to quickly access different sections. Feel free to click on links to learn more about my projects or to contact me directly.
+
+## Contact Me
+
+If you have questions, collaboration opportunities, or just want to chat, don't hesitate to reach out. You'll find my contact details in the portfolio's contact section.
